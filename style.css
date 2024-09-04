@@ -1,0 +1,56 @@
+html {
+  font-size: 10px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.key {
+  border: .4rem solid white;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 50px;
+  padding: 1rem 2.5rem;
+  transition: all 1.07s ease;
+  width: 15rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,1);
+  text-shadow: 0 0 .5rem black;
+  overflow: hidden;
+}
+
+.playing {
+  transform: scale(2);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+  
+}
+
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+@media  screen and (max-width:720px) {
+  .keys{
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
